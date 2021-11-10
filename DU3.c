@@ -229,7 +229,7 @@ int energyConsumption(int y1, int m1, int d1, int h1, int i1, int y2, int m2, in
 int main(int argc, char *argv[])
 {
     long long int consumption;
-    energyConsumption(19561345, 3, 27, 7, 8, 2161, 4, 4, 20, 26, &consumption);
+    energyConsumption(195651345, 3, 27, 7, 8, 2161, 4, 4, 20, 26, &consumption);
     printf("%lld\n", consumption);
     return 0;
 }
