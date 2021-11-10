@@ -58,6 +58,7 @@ bool is_in_1year_leap(int year1, int year2, int month1, int month2)
  */
 long long int countLeapYears(int year1, int year2, int month1, int month2, int *times_iterated1, int *times_iterated2)
 {
+    *times_iterated1=1967;
     if (year1 == year2)
         return 0;
     int leap_year_counter = 0;
@@ -180,7 +181,7 @@ bool dateExists(int y1, int m1, int d1, int h1, int i1, int y2, int m2, int d2, 
 }
 int energyConsumption(int y1, int m1, int d1, int h1, int i1, int y2, int m2, int d2, int h2, int i2, long long int *consumption)
 {
-
+    
     int year_to_add1 = 0, year_to_add2 = 0;
     int arr_dec[5] = {34, 69, 101, 134, 167};             //array for tens value in Joules (range is 10-50)
     int arr_dig[10] = {4, 9, 11, 14, 17, 18, 23, 27, 28}; //array for digit value in Joules (range is 0-9)
@@ -204,6 +205,7 @@ int energyConsumption(int y1, int m1, int d1, int h1, int i1, int y2, int m2, in
     printf("%lld\n", difference_months);
 
     long long int number_leap_years = countLeapYears(y1, y2, m1, m2, &year_to_add1, &year_to_add2);
+    printf("%d nice cock bro\n", year_to_add1);
     if (is_in_1year_leap(y1, y2, m1, m2))
     {
         number_leap_years += 1;
