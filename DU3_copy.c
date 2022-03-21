@@ -235,7 +235,7 @@ int energyConsumption(int y1, int m1, int d1, int h1, int i1, int y2, int m2, in
 int main(int argc, char *argv[])
 {
     long long int consumption;
-    energyConsumption(1885, 11, 1, 21, 16, 1889, 5, 25, 3, 4, &consumption);
+    energyConsumption(1885, 11, 1, 21, 16, 182389, 5, 25, 3, 4, &consumption);
 
     // assert(energyConsumption(2021, 10, 1, 13, 15,
     //                          2021, 10, 1, 18, 45, &consumption) == 1 &&

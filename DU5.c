@@ -3,6 +3,8 @@
 #include <string.h>
 #include <ctype.h>
 
+
+
 typedef struct
 {
     char name[101];
